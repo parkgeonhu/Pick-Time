@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+        내가 등록한 행사
+    </title>
+
+    <link href="../static/css/toolkit-inverse.css" rel="stylesheet">
+    <link href="../static/css/application.css" rel="stylesheet">
+    <link href="../static/css/font.css" rel="stylesheet">
+
+    <!--으차니 css -->
+    <link rel="stylesheet" href="../static/css/main.css">
+
+    <style>
+        body {
+            width: 1px;
+            min-width: 100%;
+            *width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="bw">
+        <div class="fu">
+            <div class="ge aom">
+                <nav class="aot">
+                    <div class="aon">
+                        <button class="amy amz aoo" type="button" data-toggle="collapse" data-target="#nav-toggleable-sm">
+                            <span class="ct">Toggle nav</span>
+                        </button>
+
+                        <!-- 이미지 로고 태그 -->
+                        <a href="../html/index.html"><img src="../static/images/logo.png" class="logo_euichan"></a>
+                    </div>
+
+                    <div class="collapse and" id="nav-toggleable-sm">
+                        <form class="aor">
+                            <input class="form-control" type="text" placeholder="Search...">
+                            <button type="submit" class="fm">
+                                <span class="bv adn"></span>
+                            </button>
+                        </form>
+                        <ul class="nav of nav-stacked">
+                            <li class="tq">PickTime Menu</li>
+                            <li>
+                                <a href="../html/index.html">PickTime 메인 페이지</a>
+                            </li>
+                            <li>
+                                <a href="../html/post_select.html">행사설문(등록)시작하기</a>
+                            </li>
+
+                            <li class="tq">분석하기</li>
+                            <li class="active">
+                                <a href="../html/my_post.html">
+                                      내가 등록한 행사
+                                </a>
+                            </li>
+
+                            <li class="tq">더보기</li>
+                            <li>
+                                <a href="../html/signin.html">
+                                  로그인
+                            </a>
+                            </li>
+                            <li>
+                                <a href="../html/signup.html">
+                                      회원가입
+                                </a>
+                            </li>
+                        </ul>
+                        <hr class="rw aky">
+                    </div>
+                </nav>
+            </div>
+            <div class="hc aps">
+                <div class="apa">
+                    <div class="apb">
+                        <h6 class="apd">EventList</h6>
+                        <h2 class="apc">내가 등록한 행사</h2>
+                    </div>
+                </div>
+
+                <div class="ud">
+                    <div class="eg">
+                        <table class="cl" data-sort="table">
+                            <thead>
+                                <tr>
+                                    <th class="header" style="text-align:center">결과</th>
+                                    <th class="header">마감날짜</th>
+                                    <th class="header">게시자</th>
+                                    <th class="header">행사 제목</th>
+                                    <th class="header">설문 참여자 수</th>
+                                    <th class="header">조회 수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:center">2015-12-22</td>
+                                    <td>11/2</td>
+                                    <td>선린인터넷고등학교</td>
+                                    <td><a href="../html/post_detail.html" style="color:#cfd2da;">디지털콘테스트 경진대회</a></td>
+                                    <td>283</td>
+                                    <td>300</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center">
+                                        <button type="button" class="ce fr apo">진행 중</button>
+                                    </td>
+                                    <td><a style="color:#cfd2da;">7/16</a></td>
+                                    <td>선린인터넷고등학교</td>
+                                    <td><a href="" style="color:#cfd2da;">모바일콘테스트</a></td>
+                                    <td>200</td>
+                                    <td>163</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center">
+                                        <button type="button" class="ce fr apr">파기</button>
+                                    </td>
+                                    <td>5/11</td>
+                                    <td>전의찬</td>
+                                    <td><a href="" style="color:#cfd2da;">저녁 급팟 구합니다</a></td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/chart.js"></script>
+    <script src="../static/js/tablesorter.min.js"></script>
+    <script src="../static/js/toolkit.js"></script>
+    <script src="../static/js/application.js"></script>
+    <script>
+        // execute/clear BS loaders for docs
+        $(function () {
+            while (window.BS && window.BS.loader && window.BS.loader.length) {
+                (window.BS.loader.pop())()
+            }
+        })
+    </script>
+</body>
+
+</html>

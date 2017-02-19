@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+        행사 참가 예정자 분석
+    </title>
+
+    <link href="../static/css/custom.css" rel="stylesheet">
+    <link href="../static/css/toolkit-inverse.css" rel="stylesheet">
+    <link href="../static/css/application.css" rel="stylesheet">
+    <link href="../static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../static/css/docs.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
+
+    <style>
+        body {
+            width: 1px;
+            min-width: 100%;
+            *width: 100%;
+        }
+    </style>
+
+</head>
+
+<body class="ts">
+    <nav class="ci ou g">
+        <div class="ft ui">
+            <div class="oj">
+                <button type="button" class="om collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="ct">Toggle navigation</span>
+                    <span class="on"></span>
+                    <span class="on"></span>
+                    <span class="on"></span>
+                </button>
+                <a class="ol tu" href="../html/index.html">
+                    <img class="logo_euichan_anal" src="../static/images/logo.png">
+                </a>
+            </div>
+            <div id="navbar" class="ok collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../html/index.html">메인 페이지</a>
+                    </li>
+                    <li>
+                        <a href="../html/post_select.html">설문 시작</a>
+                    </li>
+                    <li>
+                        <a href="../html/my_post.html">내 행사</a>
+                    </li>
+                    <li>
+                        <a href="../html/index.html">로그아웃</a>
+                    </li>
+                </ul>
+                <form class="fa oo ny">
+                    <div class="aol">
+                        <input class="form-control" type="text" placeholder="Search...">
+                        <span class="bv adn"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ft ui">
+        <div class="apa alg">
+            <div class="apb">
+                <h6 class="apd">Analytics</h6>
+                <h2 class="apc">행사 참가 예정자 시간대 분석</h2>
+            </div>
+        </div>
+
+        <div class="anv aky ali">
+            <h3 class="anw anx">page stats</h3>
+        </div>
+        <div class="fu apt">
+            <div class="gq gf ala">
+                <div class="apu">
+                    <div class="alz">
+                        <span class="anj">당일 페이지 조회 수</span>
+                        <h2 class="ani">
+          12,938
+          <small class="bz pd">5%</small>
+        </h2>
+                    </div>
+                    <canvas id="sparkline1" width="378" height="94" class="apv" data-chart="spark-line" data-value="[{strokeColor: '#1ca8dd', fillColor:'rgba(28,168,221,.03)', data:[28,68,41,43,96,45,100]}]" data-labels="['a', 'b','c','d','e','f','g']" style="width: 189px; height: 47px;"></canvas>
+                </div>
+            </div>
+            <div class="gq gf ala">
+                <div class="apu">
+                    <div class="alz">
+                        <span class="anj">누적 페이지 조회 수</span>
+                        <h2 class="ani">
+          758
+          <small class="bz pg">1.3%</small>
+        </h2>
+                    </div>
+                    <canvas id="sparkline1" width="378" height="94" class="apv" data-chart="spark-line" data-value="[{strokeColor: '#1ca8dd', fillColor:'rgba(28,168,221,.03)', data:[4,34,64,27,96,50,80]}]" data-labels="['a', 'b','c','d','e','f','g']" style="width: 189px; height: 47px;"></canvas>
+                </div>
+            </div>
+            <div class="gq gf ala">
+                <div class="apu">
+                    <div class="alz">
+                        <span class="anj">당일 참가자 수</span>
+                        <h2 class="ani">
+          1,293
+          <small class="bz pd">6.75%</small>
+        </h2>
+                    </div>
+                    <canvas id="sparkline1" width="378" height="94" class="apv" data-chart="spark-line" data-value="[{strokeColor: '#1ca8dd', fillColor:'rgba(28,168,221,.03)', data:[12,38,32,60,36,54,68]}]" data-labels="['a', 'b','c','d','e','f','g']" style="width: 189px; height: 47px;"></canvas>
+                </div>
+            </div>
+            <div class="gq gf ala">
+                <div class="apu">
+                    <div class="alz">
+                        <span class="anj">누적 참가자 수</span>
+                        <h2 class="ani">
+          758
+          <small class="bz pd">1.3%</small>
+        </h2>
+                    </div>
+                    <canvas id="sparkline1" width="378" height="94" class="apv" data-chart="spark-line" data-value="[{strokeColor: '#1ca8dd', fillColor:'rgba(28,168,221,.03)', data:[43,48,52,58,50,95,100]}]" data-labels="['a', 'b','c','d','e','f','g']" style="width: 189px; height: 47px;"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="anv all">
+            <ul class="nav of anw any" role="tablist">
+                <li class="active" role="presentation">
+                    <a href="#sales" role="tab" data-toggle="tab" aria-controls="sales">시간대</a>
+                </li>
+                <li role="presentation">
+                    <a href="#inventory" role="tab" data-toggle="tab" aria-controls="inventory">연령</a>
+                </li>
+                <li role="presentation">
+                    <a href="#profit" role="tab" data-toggle="tab" aria-controls="profit">거주지</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="oh">
+            <div role="tabpanel" class="oi active" id="sales">
+                <div class="fu aqo db">
+                    <div class="gi" style="width:25%">
+                        <div class="aqp ale">
+                            <canvas class="ant" width="200" height="200" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 230, color: '#1ca8dd', label: 'Returning' }, { value: 130, color: '#1bc98e', label: 'New' }]">
+                            </canvas>
+                        </div>
+                        <strong class="dh">오전</strong>
+                        <h3>8시 ~ 11시</h3>
+                    </div>
+                    <div class="gi" style="width:25%">
+                        <div class="aqp ale">
+                            <canvas class="ant" width="200" height="200" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 330, color: '#1ca8dd', label: 'Recurring' }, { value: 30, color: '#1bc98e', label: 'New' }]">
+                            </canvas>
+                        </div>
+                        <strong class="dh">오후</strong>
+                        <h3>12시~3시</h3>
+                    </div>
+                    <div class="gi" style="width:25%">
+                        <div class="aqp ale">
+                            <canvas class="ant" width="200" height="200" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 100, color: '#42a5f5', label: 'Referrals' }, { value: 260, color: '#1bc98e', label: 'Direct' }]">
+                            </canvas>
+                        </div>
+                        <strong class="dh">오후</strong>
+                        <h3>4시 ~ 7시</h3>
+                    </div>
+                    <div class="gi" style="width:25%">
+                        <div class="aqp ale">
+                            <canvas class="ant" width="200" height="200" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 100, color: '#42a5f5', label: 'Referrals' }, { value: 260, color: '#1bc98e', label: 'Direct' }]">
+                            </canvas>
+                        </div>
+                        <strong class="dh">오후</strong>
+                        <h3>8시 ~ 11시</h3>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div role="tabpanel" class="oi" id="inventory">
+                <div class="aqn">
+                    <canvas class="anu" width="1774" height="409" data-chart="bar" data-scale-line-color="transparent" data-scale-grid-line-color="rgba(255,255,255,.05)" data-scale-font-color="#a2a2a2" data-labels="['10대','20대','30대','40대','50대 이상']" data-value="[{ label: 'First dataset', data: [65, 59, 80, 81, 56] }, { label: 'Second dataset', data: [28, 48, 40, 19, 86] }]" style="width: 1183px; height: 273px;">
+                    </canvas>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="oi" id="profit">
+                <div class="fu aqo db">
+                    <div class="gi" style="width:50%">
+                        <div class="aqp ale">
+                            <canvas class="ant" width="200" height="100" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 230, color: '#1ca8dd', label: 'Returning' }, { value: 130, color: '#1bc98e', label: 'New' }]">
+                            </canvas>
+                        </div>
+                        <strong class="dh">성별</strong>
+                        <h3>남자</h3>
+                    </div>
+                    <div class="gi" style="width:50%">
+                        <div class="aqp ale">
+                            <canvas class="ant" width="200" height="100" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 330, color: '#1ca8dd', label: 'Recurring' }, { value: 30, color: '#1bc98e', label: 'New' }]">
+                            </canvas>
+                        </div>
+                        <strong class="dh">성별</strong>
+                        <h3>여자</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="anv aln ali">
+            <h3 class="anw anx">Participants</h3>
+        </div>
+
+        <div id="boardRighter">
+            <div class="apa">
+                <div class="apb">
+                    <h6 class="apd">Participate List</h6>
+                    <h2 class="apc">참가자 명단</h2>
+                </div>
+            </div>
+
+
+            <div class="ud">
+                <div class="eg">
+                    <table class="cl" data-sort="table">
+                        <thead>
+                            <tr>
+                                <th class="header headerSortDown">신청 날짜</th>
+                                <th class="header">참가자</th>
+                                <th class="header">거주지</th>
+                                <th class="header">나이</th>
+                                <th class="header">성별</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#10001</td>
+                                <td>First Last</td>
+                                <td>Admin theme, marketing theme</td>
+                                <td>01/01/2015</td>
+                                <td>$200.00</td>
+                            </tr>
+                            <tr>
+                                <td>#10002</td>
+                                <td>Firstname Lastname</td>
+                                <td>Admin theme</td>
+                                <td>01/01/2015</td>
+                                <td>$100.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="center">
+            <a href="../html/select_day.html">
+                <button type="button" class="ce fn apn">날짜 결정하기</button>
+            </a>
+            <a href="../html/select_time.html">
+                <button type="button" class="ce fn apn">시간 결정하기</button>
+            </a>
+            <br>
+            <br>
+            <a style="">
+                <form method="POST" action="/event/delete/{{event.id}}">
+                    <button type="button" onclick="Javascript:button_event();" class="ce fn apr">설문 파기 하기</button>
+                </form>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/chart.js"></script>
+    <script src="../static/js/tablesorter.min.js"></script>
+    <script src="../static/js/toolkit.js"></script>
+    <script src="../static/js/application.js"></script>
+    <script>
+        $(function () {
+            while (window.BS && window.BS.loader && window.BS.loader.length) {
+                (window.BS.loader.pop())()
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        <!--
+        function button_event() {
+            if (confirm("정말 이 설문을 삭제하시겠습니까?")) { //확인
+                $('form')[0].submit();
+            } else { //취소
+                return;
+            }
+        }
+        //-->
+    </script>
+</body>
+
+
+</html>
